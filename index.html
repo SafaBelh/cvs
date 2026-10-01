@@ -665,7 +665,7 @@ function renderCard(item, index) {
       ${r.summary ? `<div class="summary-text">${esc(r.summary)}</div>` : ''}
       ${factsHTML(r, true)}
       <div class="card-foot">
-        <a class="pdf-dl-btn" href="cvs/${encodeURIComponent(item.filename)}" download="${esc(item.filename)}" onclick="event.stopPropagation()" title="Télécharger le CV PDF"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-download"/></svg>CV PDF</a>
+        <a class="pdf-dl-btn" href="resumes/${encodeURIComponent(item.filename)}" download="${esc(item.filename)}" onclick="event.stopPropagation()" title="Télécharger le CV PDF"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-download"/></svg>CV PDF</a>
         <span class="card-cta">Voir le profil ${ICON('chev-r')}</span>
       </div>
     </div>
@@ -826,7 +826,7 @@ function showModal(index) {
         <div class="dh-top"><h2 id="drawerTitle">${esc(r.name)}</h2><span class="verdict-badge ${r.vclass}">${badgeLabel(r.verdict, r.vclass)}</span></div>
         <div class="dh-title">${esc(r.title)}</div>
         <div class="stars">${renderStars(r.rating)}</div>
-        <a class="drawer-dl" href="cvs/${encodeURIComponent(item.filename)}" download="${esc(item.filename)}" title="Télécharger le CV PDF"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-download"/></svg>Télécharger le CV</a>
+        <a class="drawer-dl" href="resumes/${encodeURIComponent(item.filename)}" download="${esc(item.filename)}" title="Télécharger le CV PDF"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-download"/></svg>Télécharger le CV</a>
       </div>
     </div>`;
 
